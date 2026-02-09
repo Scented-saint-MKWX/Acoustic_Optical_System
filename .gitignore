@@ -1,0 +1,8 @@
+.Xil/
+*.log
+*.jou
+*.pb
+*.str
+*.vdi
+*.vds
+vivado*
