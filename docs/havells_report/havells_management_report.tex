@@ -30,6 +30,7 @@
 % Define colors
 \definecolor{nitwblue}{RGB}{0,51,102}
 \definecolor{havellsblue}{RGB}{0,82,165}
+\definecolor{statusgood}{RGB}{0,128,0}
 
 % Hyperref setup
 \hypersetup{
@@ -57,7 +58,7 @@
 \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
 
 % Custom command for Indian Rupee symbol
-\newcommand{\rupee}{\textnormal{\textbf{\textrm{₹}}}}
+\newcommand{\rupee}{₹}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DOCUMENT START
@@ -605,7 +606,7 @@ Havells maintains rigorous performance standards across all functions:
     \item \textbf{Production Standards:}
     \begin{itemize}
         \item Production volume targets
-        \item Quality standards (defect rates $<$ 0.1\%)
+        \item Quality standards (defect rates $< 0.1\%$)
         \item Equipment efficiency (OEE) targets
         \item Inventory turnover ratios
     \end{itemize}
@@ -1012,17 +1013,17 @@ Market ratios measure investor perception and market valuation.
         \hline
         \textbf{Category} & \textbf{Ratio} & \textbf{Value} & \textbf{Benchmark} & \textbf{Status} \\
         \hline
-        \multirow{1}{*}{\textbf{Liquidity}} & Current Ratio & 1.72 & 1.50 & \textcolor{green}{Above} \\
+        \textbf{Liquidity} & Current Ratio & 1.72 & 1.50 & \textcolor{statusgood}{Above} \\
         \hline
-        \multirow{3}{*}{\textbf{Profitability}} & Gross Profit Ratio & 35.2\% & 32.0\% & \textcolor{green}{Above} \\
-        & Operating Profit Ratio & 11.8\% & 10.5\% & \textcolor{green}{Above} \\
-        & Net Profit Ratio & 7.25\% & 6.5\% & \textcolor{green}{Above} \\
+        \multirow{3}{*}{\textbf{Profitability}} & Gross Profit Ratio & 35.2\% & 32.0\% & \textcolor{statusgood}{Above} \\
+        & Operating Profit Ratio & 11.8\% & 10.5\% & \textcolor{statusgood}{Above} \\
+        & Net Profit Ratio & 7.25\% & 6.5\% & \textcolor{statusgood}{Above} \\
         \hline
-        \multirow{3}{*}{\textbf{Returns}} & ROE & 17.12\% & 15.0\% & \textcolor{green}{Above} \\
-        & ROCE & 22.45\% & 18.0\% & \textcolor{green}{Above} \\
-        & ROA & 12.02\% & 10.0\% & \textcolor{green}{Above} \\
+        \multirow{3}{*}{\textbf{Returns}} & ROE & 17.12\% & 15.0\% & \textcolor{statusgood}{Above} \\
+        & ROCE & 22.45\% & 18.0\% & \textcolor{statusgood}{Above} \\
+        & ROA & 12.02\% & 10.0\% & \textcolor{statusgood}{Above} \\
         \hline
-        \textbf{Solvency} & Debt Equity Ratio & 0.08 & 0.40 & \textcolor{green}{Better} \\
+        \textbf{Solvency} & Debt Equity Ratio & 0.08 & 0.40 & \textcolor{statusgood}{Better} \\
         \hline
         \multirow{3}{*}{\textbf{Valuation}} & EPS & \rupee~20.89 & -- & Growing \\
         & DPS & \rupee~5.50 & -- & Growing \\
