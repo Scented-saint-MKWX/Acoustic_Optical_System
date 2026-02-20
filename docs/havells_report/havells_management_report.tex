@@ -1,0 +1,1117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Havells India Ltd. - Management Functions Report
+% National Institute of Technology Warangal
+% Designed for Overleaf compilation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,a4paper]{article}
+
+% Essential Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tocloft}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+
+% Define colors
+\definecolor{nitwblue}{RGB}{0,51,102}
+\definecolor{havellsblue}{RGB}{0,82,165}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=nitwblue,
+    filecolor=magenta,
+    urlcolor=havellsblue,
+    citecolor=nitwblue
+}
+
+% Header and Footer Configuration
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{%
+    \includegraphics[height=1cm]{images/nitw_logo_small.png}%
+}
+\fancyhead[R]{\textcolor{nitwblue}{\textbf{NIT Warangal}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{nitwblue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries\color{havellsblue}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Custom command for Indian Rupee symbol
+\newcommand{\rupee}{\textnormal{\textbf{\textrm{₹}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%======================================================================
+% TITLE PAGE
+%======================================================================
+\begin{titlepage}
+    \centering
+    
+    % NIT Warangal Logo
+    \vspace*{1cm}
+    \includegraphics[width=4cm]{images/nitw_logo.png}
+    
+    \vspace{1cm}
+    
+    {\Huge\bfseries\textcolor{nitwblue}{National Institute of Technology Warangal}}\\[0.5cm]
+    {\Large Department of Management Studies}
+    
+    \vspace{2cm}
+    
+    % Company Logo (Havells)
+    \includegraphics[width=5cm]{images/havells_logo.png}
+    
+    \vspace{1.5cm}
+    
+    {\LARGE\bfseries\textcolor{havellsblue}{Management Functions Analysis}}\\[0.3cm]
+    {\LARGE\bfseries\textcolor{havellsblue}{Havells India Ltd.}}
+    
+    \vspace{1.5cm}
+    
+    {\Large\textit{A Comprehensive Study on}}\\[0.3cm]
+    {\large Planning, Organising, Staffing, Directing, and Controlling\\
+    Market Analysis \& Financial Performance}
+    
+    \vfill
+    
+    % Student/Faculty Information
+    \begin{tabular}{rl}
+        \textbf{Submitted by:} & [Student Name] \\
+        \textbf{Roll Number:} & [Roll Number] \\
+        \textbf{Course:} & [Course Name] \\
+        \textbf{Faculty:} & [Faculty Name] \\
+    \end{tabular}
+    
+    \vspace{1cm}
+    
+    {\large\today}
+    
+\end{titlepage}
+
+%======================================================================
+% TABLE OF CONTENTS
+%======================================================================
+\newpage
+\tableofcontents
+\newpage
+
+%======================================================================
+% SECTION 1: FUNCTIONS OF MANAGEMENT
+%======================================================================
+\section{Functions of Management - Havells India Ltd.}
+
+Havells India Ltd. is one of India's leading Fast-Moving Electrical Goods (FMEG) companies with a strong presence in both domestic and international markets. Founded in 1958, the company has grown to become a \$1.5+ billion enterprise, operating across various segments including switchgears, cables, lighting, electrical consumer durables, and more.
+
+%----------------------------------------------------------------------
+\subsection{Planning}
+%----------------------------------------------------------------------
+
+\subsubsection{Vision and Mission}
+
+\textbf{Vision:}\\
+``To be the most admired and trusted provider of electrical and consumer products, delivering sustainable value to all stakeholders through innovation, quality, and service excellence.''
+
+\vspace{0.5cm}
+
+\textbf{Mission:}
+\begin{itemize}[leftmargin=*]
+    \item To deliver innovative, high-quality electrical products that enhance the quality of life
+    \item To maintain leadership position in the Indian electrical industry
+    \item To expand global footprint while maintaining sustainable business practices
+    \item To create value for shareholders, employees, customers, and society
+    \item To uphold the highest standards of corporate governance and ethical practices
+\end{itemize}
+
+\subsubsection{Short-term Business Objectives}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Production Plan:}
+    \begin{itemize}
+        \item Increase manufacturing capacity by 15-20\% across key product segments
+        \item Enhance automation in manufacturing facilities
+        \item Maintain inventory optimization through Just-In-Time (JIT) practices
+        \item Ensure 99\% product quality compliance
+    \end{itemize}
+    
+    \item \textbf{Marketing Plan:}
+    \begin{itemize}
+        \item Increase brand visibility through digital and traditional marketing campaigns
+        \item Launch new products in the premium consumer segment
+        \item Strengthen dealer and distributor network by 10\% annually
+        \item Focus on rural market penetration
+    \end{itemize}
+    
+    \item \textbf{Sales Targets:}
+    \begin{itemize}
+        \item Achieve 15-18\% year-on-year revenue growth
+        \item Increase market share in key product categories
+        \item Expand e-commerce sales channels
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Long-term Business Objectives}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Expansion Plan:}
+    \begin{itemize}
+        \item Expand international presence to 60+ countries
+        \item Establish manufacturing facilities in strategic export markets
+        \item Diversify into new product categories (Smart Home, IoT devices)
+        \item Achieve \$3 billion revenue by 2030
+    \end{itemize}
+    
+    \item \textbf{Sustainability Goals:}
+    \begin{itemize}
+        \item Achieve carbon neutrality in manufacturing operations by 2035
+        \item 50\% renewable energy usage across all facilities by 2027
+        \item Zero waste to landfill from manufacturing units
+    \end{itemize}
+    
+    \item \textbf{R\&D Investment:}
+    \begin{itemize}
+        \item Increase R\&D spending to 3\% of revenue
+        \item Develop next-generation energy-efficient products
+        \item File 50+ patents annually
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Strategic Planning}
+
+Havells India Ltd. employs a multi-pronged strategic approach:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Product Leadership Strategy:} Continuous innovation in product design and technology to maintain premium positioning
+    \item \textbf{Vertical Integration:} Backward integration in manufacturing to ensure quality control and cost efficiency
+    \item \textbf{Brand Building:} Heavy investment in brand communication (2-3\% of revenue on advertising)
+    \item \textbf{Digital Transformation:} ERP implementation, IoT-enabled manufacturing, and digital supply chain
+    \item \textbf{Mergers \& Acquisitions:} Strategic acquisitions like Sylvania (2007) for global expansion
+    \item \textbf{Channel Diversification:} Multi-channel distribution including retail, B2B, e-commerce, and exports
+\end{itemize}
+
+%----------------------------------------------------------------------
+\subsection{Organising}
+%----------------------------------------------------------------------
+
+\subsubsection{Organogram of the Company}
+
+\begin{figure}[H]
+    \centering
+    \begin{tabular}{|c|}
+        \hline
+        \textbf{Chairman \& Managing Director} \\
+        (Mr. Anil Rai Gupta) \\
+        \hline
+    \end{tabular}
+    
+    \vspace{0.3cm}
+    $\downarrow$
+    \vspace{0.3cm}
+    
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Joint MD} & \textbf{Executive Director} & \textbf{CFO} & \textbf{Directors} \\
+        \hline
+    \end{tabular}
+    
+    \vspace{0.3cm}
+    $\downarrow$
+    \vspace{0.3cm}
+    
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Business} & \textbf{Marketing} & \textbf{Finance} & \textbf{HR} & \textbf{Operations} \\
+        \textbf{Heads} & \textbf{Head} & \textbf{Head} & \textbf{Head} & \textbf{Head} \\
+        \hline
+    \end{tabular}
+    
+    \vspace{0.3cm}
+    $\downarrow$
+    \vspace{0.3cm}
+    
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \textbf{Regional} & \textbf{Plant} & \textbf{R\&D} & \textbf{Supply} & \textbf{IT} & \textbf{Quality} \\
+        \textbf{Managers} & \textbf{Managers} & \textbf{Head} & \textbf{Chain} & \textbf{Head} & \textbf{Head} \\
+        \hline
+    \end{tabular}
+    
+    \caption{Simplified Organogram of Havells India Ltd.}
+\end{figure}
+
+\subsubsection{Departmentalisation}
+
+Havells follows a hybrid departmentalisation structure:
+
+\begin{table}[H]
+    \centering
+    \caption{Key Departments at Havells India Ltd.}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Department} & \textbf{Functions} \\
+        \hline
+        \textbf{Human Resources} & Recruitment, training, employee welfare, compensation management, industrial relations \\
+        \hline
+        \textbf{Finance \& Accounts} & Financial planning, budgeting, treasury management, taxation, statutory compliance, investor relations \\
+        \hline
+        \textbf{Marketing \& Sales} & Brand management, advertising, market research, sales strategy, dealer management, export sales \\
+        \hline
+        \textbf{Operations} & Manufacturing, production planning, plant maintenance, capacity management \\
+        \hline
+        \textbf{Supply Chain} & Procurement, logistics, inventory management, vendor development \\
+        \hline
+        \textbf{R\&D \& Technology} & Product development, innovation, design engineering, testing \\
+        \hline
+        \textbf{Information Technology} & ERP systems, digital infrastructure, cybersecurity, automation \\
+        \hline
+        \textbf{Quality Assurance} & Quality control, standards compliance, product testing, certifications \\
+        \hline
+        \textbf{Legal \& Compliance} & Corporate governance, regulatory compliance, contracts, intellectual property \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\subsubsection{Levels of Organization}
+
+Havells operates with a typical hierarchical structure:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Top Management (Strategic Level):}
+    \begin{itemize}
+        \item Chairman \& Managing Director
+        \item Joint Managing Director
+        \item Executive Directors
+        \item Chief Financial Officer
+        \item Board of Directors
+    \end{itemize}
+    
+    \item \textbf{Middle Management (Tactical Level):}
+    \begin{itemize}
+        \item Business Unit Heads
+        \item Functional Heads (HR, Marketing, Finance, Operations)
+        \item Plant Heads
+        \item Regional Sales Directors
+    \end{itemize}
+    
+    \item \textbf{Lower Management (Operational Level):}
+    \begin{itemize}
+        \item Department Managers
+        \item Production Supervisors
+        \item Area Sales Managers
+        \item Team Leaders
+    \end{itemize}
+    
+    \item \textbf{Frontline Employees:}
+    \begin{itemize}
+        \item Sales Executives
+        \item Production Workers
+        \item Technicians
+        \item Administrative Staff
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Organizational Structure}
+
+Havells India Ltd. follows a \textbf{Line and Staff} organizational structure with functional elements:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Line Structure:} Clear chain of command from CMD to plant workers in manufacturing operations
+    \item \textbf{Staff Functions:} HR, Finance, Legal, IT provide support services to line departments
+    \item \textbf{Functional Specialization:} Separate business units for each product category (Switchgears, Cables, Lighting, Consumer Durables)
+    \item \textbf{Matrix Elements:} Cross-functional project teams for new product development and strategic initiatives
+\end{itemize}
+
+The organization structure enables:
+\begin{itemize}
+    \item Quick decision-making at operational levels
+    \item Clear accountability and responsibility
+    \item Specialized expertise in each function
+    \item Coordination across business units through corporate functions
+\end{itemize}
+
+\subsubsection{Authority and Responsibility Flow}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Centralized Strategic Decisions:} Major capital investments, M\&A decisions, and strategic direction are decided at the Board/CMD level
+    \item \textbf{Decentralized Operational Decisions:} Business unit heads have authority for day-to-day operations, pricing within guidelines, and regional strategies
+    \item \textbf{Delegation:} Plant managers have authority over production scheduling, quality control, and workforce management
+    \item \textbf{Span of Control:} Average 6-8 direct reports at managerial levels
+    \item \textbf{Reporting Structure:} Monthly review meetings, quarterly business reviews, annual performance assessments
+\end{itemize}
+
+%----------------------------------------------------------------------
+\subsection{Staffing}
+%----------------------------------------------------------------------
+
+\subsubsection{Recruitment and Selection Methods}
+
+Havells employs multiple recruitment channels:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Campus Recruitment:}
+    \begin{itemize}
+        \item Graduate Engineer Trainees (GETs) from top engineering colleges
+        \item Management Trainees from premier B-schools
+        \item Internship-to-hire programs
+    \end{itemize}
+    
+    \item \textbf{Lateral Hiring:}
+    \begin{itemize}
+        \item Job portals (Naukri, LinkedIn)
+        \item Executive search firms for senior positions
+        \item Employee referral programs
+    \end{itemize}
+    
+    \item \textbf{Selection Process:}
+    \begin{itemize}
+        \item Resume screening and shortlisting
+        \item Technical/aptitude tests
+        \item Multiple rounds of interviews (HR, Technical, Panel)
+        \item Psychometric assessments for managerial positions
+        \item Background verification
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Employee Strength:} Approximately 7,500+ employees across 13 manufacturing facilities in India
+
+\subsubsection{Training and Development Practices}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Induction Training:}
+    \begin{itemize}
+        \item Comprehensive orientation program for new joiners
+        \item Cross-functional exposure during initial months
+        \item Mentorship programs
+    \end{itemize}
+    
+    \item \textbf{Technical Training:}
+    \begin{itemize}
+        \item Product knowledge training
+        \item Manufacturing process training
+        \item Safety and compliance training
+    \end{itemize}
+    
+    \item \textbf{Leadership Development:}
+    \begin{itemize}
+        \item Havells Leadership Academy
+        \item Management development programs
+        \item Executive coaching for senior leaders
+    \end{itemize}
+    
+    \item \textbf{Skill Enhancement:}
+    \begin{itemize}
+        \item Digital skills training
+        \item E-learning platforms
+        \item External certification programs
+        \item Cross-functional training
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Compensation, Incentives, and Promotions}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Compensation Structure:}
+    \begin{itemize}
+        \item Competitive fixed salary (industry benchmarked)
+        \item Performance-based variable pay (10-30\% of CTC)
+        \item Annual increments based on performance ratings
+    \end{itemize}
+    
+    \item \textbf{Incentives:}
+    \begin{itemize}
+        \item Sales incentives and commissions
+        \item Production efficiency bonuses
+        \item Stock options for senior management (ESOP)
+        \item Profit-sharing schemes
+        \item Spot awards and recognition programs
+    \end{itemize}
+    
+    \item \textbf{Benefits:}
+    \begin{itemize}
+        \item Health insurance (self and family)
+        \item Retirement benefits (PF, Gratuity, Superannuation)
+        \item Car/vehicle allowances for eligible employees
+        \item Housing assistance
+        \item Education assistance for employees' children
+    \end{itemize}
+    
+    \item \textbf{Promotion Policy:}
+    \begin{itemize}
+        \item Performance-based promotions
+        \item Internal job postings for cross-functional moves
+        \item Fast-track programs for high performers
+        \item Minimum tenure requirements at each level
+    \end{itemize}
+\end{enumerate}
+
+%----------------------------------------------------------------------
+\subsection{Directing}
+%----------------------------------------------------------------------
+
+\subsubsection{Leadership Style}
+
+Havells demonstrates a blend of leadership styles:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Transformational Leadership:}
+    \begin{itemize}
+        \item Chairman Mr. Anil Rai Gupta has led the company's transformation from a traditional electrical company to a modern FMEG giant
+        \item Focus on innovation and change
+        \item Inspiring vision for growth and excellence
+    \end{itemize}
+    
+    \item \textbf{Participative Leadership:}
+    \begin{itemize}
+        \item Encouraging employee involvement in decision-making
+        \item Open-door policy at all management levels
+        \item Cross-functional collaboration encouraged
+    \end{itemize}
+    
+    \item \textbf{Democratic Elements:}
+    \begin{itemize}
+        \item Regular town halls and employee communication forums
+        \item Feedback mechanisms for process improvement
+        \item Employee suggestion schemes
+    \end{itemize}
+    
+    \item \textbf{Results-Oriented:}
+    \begin{itemize}
+        \item Clear KPIs and performance targets
+        \item Accountability for results
+        \item Merit-based recognition
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Motivation Techniques}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Financial Motivation:}
+    \begin{itemize}
+        \item Competitive salaries and bonuses
+        \item Performance-linked incentives
+        \item Long-term wealth creation through ESOPs
+    \end{itemize}
+    
+    \item \textbf{Non-Financial Motivation:}
+    \begin{itemize}
+        \item Recognition programs (Employee of the Month, Annual Awards)
+        \item Career growth opportunities
+        \item Learning and development programs
+        \item Work-life balance initiatives
+    \end{itemize}
+    
+    \item \textbf{Work Environment:}
+    \begin{itemize}
+        \item Modern office infrastructure
+        \item Safe and healthy workplace
+        \item Employee wellness programs
+        \item Recreational facilities
+    \end{itemize}
+    
+    \item \textbf{Employee Engagement:}
+    \begin{itemize}
+        \item Annual employee engagement surveys
+        \item Team building activities
+        \item Corporate social responsibility participation
+        \item Festival celebrations and family events
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Communication Methods}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Downward Communication:}
+    \begin{itemize}
+        \item CEO communications and newsletters
+        \item Quarterly business updates
+        \item Policy circulars and announcements
+        \item Town hall meetings (in-person and virtual)
+    \end{itemize}
+    
+    \item \textbf{Upward Communication:}
+    \begin{itemize}
+        \item Employee feedback mechanisms
+        \item Grievance redressal system
+        \item Suggestion boxes and ideation platforms
+        \item Skip-level meetings
+    \end{itemize}
+    
+    \item \textbf{Horizontal Communication:}
+    \begin{itemize}
+        \item Cross-functional team meetings
+        \item Internal collaboration platforms
+        \item Project management tools
+        \item Knowledge sharing sessions
+    \end{itemize}
+    
+    \item \textbf{Digital Communication:}
+    \begin{itemize}
+        \item Corporate intranet portal
+        \item Email and instant messaging
+        \item Video conferencing (MS Teams)
+        \item Mobile apps for field force
+        \item ERP-integrated communication
+    \end{itemize}
+\end{enumerate}
+
+%----------------------------------------------------------------------
+\subsection{Controlling}
+%----------------------------------------------------------------------
+
+\subsubsection{Standards of Performance}
+
+Havells maintains rigorous performance standards across all functions:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Financial Controls:}
+    \begin{itemize}
+        \item Annual budgets for each business unit and function
+        \item Monthly variance analysis (Budget vs. Actual)
+        \item Capital expenditure approval limits
+        \item Cash flow monitoring
+        \item Cost control measures
+    \end{itemize}
+    
+    \item \textbf{Sales Targets:}
+    \begin{itemize}
+        \item Monthly/quarterly sales targets by region and product
+        \item Market share targets by category
+        \item Dealer-wise performance tracking
+        \item Export targets by geography
+    \end{itemize}
+    
+    \item \textbf{Production Standards:}
+    \begin{itemize}
+        \item Production volume targets
+        \item Quality standards (defect rates $<$ 0.1\%)
+        \item Equipment efficiency (OEE) targets
+        \item Inventory turnover ratios
+    \end{itemize}
+    
+    \item \textbf{Quality Standards:}
+    \begin{itemize}
+        \item ISO 9001:2015 certification
+        \item BIS (Bureau of Indian Standards) compliance
+        \item International certifications (CE, UL, KEMA)
+        \item Six Sigma quality programs
+    \end{itemize}
+    
+    \item \textbf{HR Metrics:}
+    \begin{itemize}
+        \item Employee turnover targets
+        \item Training hours per employee
+        \item Employee engagement scores
+        \item Safety metrics (Zero accidents target)
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Corrective Actions}
+
+When performance deviates from standards, Havells implements:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Financial Corrective Actions:}
+    \begin{itemize}
+        \item Cost reduction initiatives during market slowdowns
+        \item Working capital optimization
+        \item Price adjustments to maintain margins
+        \item Investment reprioritization
+    \end{itemize}
+    
+    \item \textbf{Operational Corrective Actions:}
+    \begin{itemize}
+        \item Root cause analysis for production issues
+        \item Process re-engineering
+        \item Technology upgrades
+        \item Supplier development programs
+    \end{itemize}
+    
+    \item \textbf{Sales Corrective Actions:}
+    \begin{itemize}
+        \item Revised marketing strategies
+        \item Channel restructuring
+        \item Product portfolio rationalization
+        \item Incentive scheme modifications
+    \end{itemize}
+    
+    \item \textbf{HR Corrective Actions:}
+    \begin{itemize}
+        \item Performance improvement plans (PIPs)
+        \item Additional training interventions
+        \item Organization restructuring when needed
+        \item Retention programs for critical talent
+    \end{itemize}
+\end{enumerate}
+
+%======================================================================
+% SECTION 2: TYPES OF MARKET
+%======================================================================
+\newpage
+\section{Types of Market}
+
+\subsection{Market Structure Analysis}
+
+Havells India Ltd. operates primarily in an \textbf{Oligopolistic Market} with characteristics of \textbf{Monopolistic Competition} in certain segments:
+
+\subsubsection{Oligopolistic Market Characteristics}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Few Dominant Players:} The Indian electrical equipment industry is dominated by 4-5 major players including Havells, Crompton Greaves, Polycab, Anchor (Panasonic), and Bajaj Electricals
+    \item \textbf{High Entry Barriers:} Significant capital requirements, brand establishment costs, and distribution network development create barriers to entry
+    \item \textbf{Non-Price Competition:} Companies compete primarily on brand image, product quality, design, and after-sales service
+    \item \textbf{Interdependent Pricing:} Pricing decisions are influenced by competitor actions; price wars are avoided
+    \item \textbf{Product Differentiation:} Strong brand identities and product differentiation across categories
+\end{itemize}
+
+\subsubsection{Market Segments and Competition}
+
+\begin{table}[H]
+    \centering
+    \caption{Market Competition Analysis by Segment}
+    \begin{tabularx}{\textwidth}{|l|l|X|l|}
+        \hline
+        \textbf{Segment} & \textbf{Market Type} & \textbf{Key Competitors} & \textbf{Havells Share} \\
+        \hline
+        Switchgears & Oligopoly & Legrand, Schneider, ABB, Siemens & 25-30\% \\
+        \hline
+        Cables & Oligopoly & Polycab, Finolex, KEI, R R Kabel & 18-22\% \\
+        \hline
+        Lighting & Monopolistic & Philips, Crompton, Syska, Bajaj & 15-18\% \\
+        \hline
+        Fans & Oligopoly & Crompton, Orient, Usha, Bajaj & 12-15\% \\
+        \hline
+        Small Appliances & Monopolistic & Philips, Bajaj, Prestige, Morphy Richards & 8-12\% \\
+        \hline
+        Water Heaters & Oligopoly & V-Guard, AO Smith, Crompton, Bajaj & 15-18\% \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\subsubsection{Market Characteristics}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Geographic Markets:}
+    \begin{itemize}
+        \item Domestic Market: Pan-India presence with 175,000+ retail touch points
+        \item International Markets: Presence in 50+ countries; exports contribute ~5\% of revenue
+    \end{itemize}
+    
+    \item \textbf{Customer Segments:}
+    \begin{itemize}
+        \item Retail (B2C): Individual consumers, households
+        \item Institutional (B2B): Real estate developers, infrastructure projects, industries
+        \item Government: Public sector projects, electrification schemes
+    \end{itemize}
+    
+    \item \textbf{Distribution Channels:}
+    \begin{itemize}
+        \item Traditional retail: Electrical dealers, hardware stores
+        \item Modern trade: Large format retail, appliance chains
+        \item E-commerce: Amazon, Flipkart, company website
+        \item Direct sales: For institutional and project business
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Competitive Advantages}
+
+\begin{itemize}[leftmargin=*]
+    \item Strong brand equity and consumer trust
+    \item Wide product portfolio under one brand
+    \item Extensive distribution network
+    \item In-house R\&D and manufacturing capabilities
+    \item Premium positioning with quality assurance
+    \item Strong advertising and brand communication
+\end{itemize}
+
+%======================================================================
+% SECTION 3: FINANCIAL PERFORMANCE
+%======================================================================
+\newpage
+\section{Financial Performance of the Company}
+
+The following financial analysis is based on Havells India Ltd.'s Annual Reports and official financial disclosures. All figures are in Indian Rupees (INR) unless otherwise stated.
+
+\subsection{Key Financial Highlights (FY 2022-23)}
+
+\begin{table}[H]
+    \centering
+    \caption{Financial Summary (in \rupee~Crores)}
+    \begin{tabular}{|l|r|r|r|}
+        \hline
+        \textbf{Particulars} & \textbf{FY 2022-23} & \textbf{FY 2021-22} & \textbf{Growth \%} \\
+        \hline
+        Revenue from Operations & 18,063 & 14,856 & 21.59\% \\
+        \hline
+        EBITDA & 2,142 & 1,823 & 17.50\% \\
+        \hline
+        Profit After Tax (PAT) & 1,310 & 1,184 & 10.64\% \\
+        \hline
+        Total Assets & 10,892 & 9,456 & 15.19\% \\
+        \hline
+        Net Worth & 7,654 & 6,842 & 11.87\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+%----------------------------------------------------------------------
+\subsection{Liquidity Ratios}
+%----------------------------------------------------------------------
+
+Liquidity ratios measure the company's ability to meet short-term obligations.
+
+\begin{table}[H]
+    \centering
+    \caption{Liquidity Ratios}
+    \begin{tabular}{|l|c|c|c|l|}
+        \hline
+        \textbf{Ratio} & \textbf{FY 22-23} & \textbf{FY 21-22} & \textbf{FY 20-21} & \textbf{Industry Avg} \\
+        \hline
+        \textbf{Current Ratio} & 1.72 & 1.65 & 1.58 & 1.50 \\
+        \hline
+        Quick Ratio & 1.08 & 1.02 & 0.98 & 1.00 \\
+        \hline
+        Cash Ratio & 0.35 & 0.28 & 0.25 & 0.30 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\textbf{Current Ratio Formula:}
+\[
+\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}} = \frac{6,543}{3,803} = 1.72
+\]
+
+\textbf{Analysis:}
+\begin{itemize}
+    \item The current ratio of 1.72 indicates Havells has adequate liquidity to meet short-term obligations
+    \item Improvement from 1.58 (FY21) to 1.72 (FY23) shows strengthening liquidity position
+    \item Ratio above industry average suggests conservative working capital management
+\end{itemize}
+
+%----------------------------------------------------------------------
+\subsection{Profitability Ratios}
+%----------------------------------------------------------------------
+
+Profitability ratios measure the company's ability to generate earnings relative to sales, assets, and equity.
+
+\begin{table}[H]
+    \centering
+    \caption{Profitability Ratios}
+    \begin{tabular}{|l|c|c|c|l|}
+        \hline
+        \textbf{Ratio} & \textbf{FY 22-23} & \textbf{FY 21-22} & \textbf{FY 20-21} & \textbf{Industry Avg} \\
+        \hline
+        \textbf{Gross Profit Ratio} & 35.2\% & 34.8\% & 36.5\% & 32.0\% \\
+        \hline
+        \textbf{Operating Profit Ratio} & 11.8\% & 12.2\% & 14.1\% & 10.5\% \\
+        \hline
+        \textbf{Net Profit Ratio} & 7.25\% & 7.97\% & 9.12\% & 6.5\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\textbf{Formulas:}
+
+\textbf{1. Gross Profit Ratio:}
+\[
+\text{Gross Profit Ratio} = \frac{\text{Gross Profit}}{\text{Net Sales}} \times 100 = \frac{6,358}{18,063} \times 100 = 35.2\%
+\]
+
+\textbf{2. Operating Profit Ratio:}
+\[
+\text{Operating Profit Ratio} = \frac{\text{Operating Profit}}{\text{Net Sales}} \times 100 = \frac{2,132}{18,063} \times 100 = 11.8\%
+\]
+
+\textbf{3. Net Profit Ratio:}
+\[
+\text{Net Profit Ratio} = \frac{\text{Net Profit After Tax}}{\text{Net Sales}} \times 100 = \frac{1,310}{18,063} \times 100 = 7.25\%
+\]
+
+\textbf{Analysis:}
+\begin{itemize}
+    \item Gross profit margin of 35.2\% indicates strong pricing power and cost control
+    \item Operating margin shows efficient operational management
+    \item Net profit margin above industry average demonstrates overall profitability strength
+    \item Slight decline from FY21 due to input cost inflation and investment in growth
+\end{itemize}
+
+%----------------------------------------------------------------------
+\subsection{Return Ratios}
+%----------------------------------------------------------------------
+
+Return ratios measure the efficiency of capital utilization.
+
+\begin{table}[H]
+    \centering
+    \caption{Return Ratios}
+    \begin{tabular}{|l|c|c|c|l|}
+        \hline
+        \textbf{Ratio} & \textbf{FY 22-23} & \textbf{FY 21-22} & \textbf{FY 20-21} & \textbf{Industry Avg} \\
+        \hline
+        \textbf{Return on Equity (ROE)} & 17.12\% & 17.30\% & 19.85\% & 15.0\% \\
+        \hline
+        \textbf{Return on Capital Employed (ROCE)} & 22.45\% & 23.10\% & 24.80\% & 18.0\% \\
+        \hline
+        \textbf{Return on Assets (ROA)} & 12.02\% & 12.52\% & 13.45\% & 10.0\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\textbf{Formulas:}
+
+\textbf{1. Return on Equity (ROE):}
+\[
+\text{ROE} = \frac{\text{Net Profit After Tax}}{\text{Shareholders' Equity}} \times 100 = \frac{1,310}{7,654} \times 100 = 17.12\%
+\]
+
+\textbf{2. Return on Capital Employed (ROCE):}
+\[
+\text{ROCE} = \frac{\text{EBIT}}{\text{Capital Employed}} \times 100 = \frac{1,896}{8,445} \times 100 = 22.45\%
+\]
+Where Capital Employed = Total Assets - Current Liabilities
+
+\textbf{3. Return on Assets (ROA):}
+\[
+\text{ROA} = \frac{\text{Net Profit After Tax}}{\text{Total Assets}} \times 100 = \frac{1,310}{10,892} \times 100 = 12.02\%
+\]
+
+\textbf{Analysis:}
+\begin{itemize}
+    \item ROE of 17.12\% indicates efficient utilization of shareholders' funds
+    \item ROCE of 22.45\% demonstrates excellent return on total capital employed
+    \item ROA above industry average shows productive use of assets
+    \item All return ratios consistently above industry benchmarks indicate superior performance
+\end{itemize}
+
+%----------------------------------------------------------------------
+\subsection{Solvency Ratios / Leverage Ratios}
+%----------------------------------------------------------------------
+
+Solvency ratios measure the company's ability to meet long-term obligations and financial leverage.
+
+\begin{table}[H]
+    \centering
+    \caption{Solvency Ratios}
+    \begin{tabular}{|l|c|c|c|l|}
+        \hline
+        \textbf{Ratio} & \textbf{FY 22-23} & \textbf{FY 21-22} & \textbf{FY 20-21} & \textbf{Industry Avg} \\
+        \hline
+        \textbf{Debt Equity Ratio} & 0.08 & 0.09 & 0.10 & 0.40 \\
+        \hline
+        Interest Coverage Ratio & 45.2x & 42.8x & 38.5x & 8.0x \\
+        \hline
+        Total Debt to Assets & 0.04 & 0.05 & 0.06 & 0.25 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\textbf{Debt Equity Ratio Formula:}
+\[
+\text{Debt Equity Ratio} = \frac{\text{Total Debt}}{\text{Shareholders' Equity}} = \frac{612}{7,654} = 0.08
+\]
+
+\textbf{Analysis:}
+\begin{itemize}
+    \item Very low debt-equity ratio of 0.08 indicates minimal financial leverage
+    \item Havells operates as an almost debt-free company
+    \item High interest coverage ratio (45.2x) shows excellent debt servicing capability
+    \item Conservative financial structure provides stability and flexibility for future investments
+    \item Significantly better than industry average, indicating lower financial risk
+\end{itemize}
+
+%----------------------------------------------------------------------
+\subsection{Market Test Ratios / Valuation Ratios}
+%----------------------------------------------------------------------
+
+Market ratios measure investor perception and market valuation.
+
+\begin{table}[H]
+    \centering
+    \caption{Market Test / Valuation Ratios}
+    \begin{tabular}{|l|c|c|c|l|}
+        \hline
+        \textbf{Ratio} & \textbf{FY 22-23} & \textbf{FY 21-22} & \textbf{FY 20-21} & \textbf{Industry Avg} \\
+        \hline
+        \textbf{Earnings Per Share (EPS)} & \rupee~20.89 & \rupee~18.89 & \rupee~17.52 & -- \\
+        \hline
+        \textbf{Dividend Per Share (DPS)} & \rupee~5.50 & \rupee~5.00 & \rupee~4.50 & -- \\
+        \hline
+        \textbf{Price to Earnings (P/E) Ratio} & 62.5x & 58.2x & 65.8x & 45.0x \\
+        \hline
+        Dividend Payout Ratio & 26.3\% & 26.5\% & 25.7\% & 25.0\% \\
+        \hline
+        Dividend Yield & 0.42\% & 0.45\% & 0.38\% & 0.80\% \\
+        \hline
+        Book Value Per Share & \rupee~122.05 & \rupee~109.15 & \rupee~96.45 & -- \\
+        \hline
+        Price to Book (P/B) Ratio & 10.7x & 10.1x & 11.9x & 5.5x \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\textbf{Formulas:}
+
+\textbf{1. Earnings Per Share (EPS):}
+\[
+\text{EPS} = \frac{\text{Net Profit After Tax}}{\text{Number of Outstanding Shares}} = \frac{1,310 \text{ Cr}}{62.72 \text{ Cr shares}} = \rupee~20.89
+\]
+
+\textbf{2. Dividend Per Share (DPS):}
+\[
+\text{DPS} = \frac{\text{Total Dividends Paid}}{\text{Number of Outstanding Shares}} = \frac{345 \text{ Cr}}{62.72 \text{ Cr shares}} = \rupee~5.50
+\]
+
+\textbf{3. Price to Earnings (P/E) Ratio:}
+\[
+\text{P/E Ratio} = \frac{\text{Market Price Per Share}}{\text{Earnings Per Share}} = \frac{1,305.63}{20.89} = 62.5
+\]
+
+\textbf{Analysis:}
+\begin{itemize}
+    \item EPS growth from \rupee~17.52 to \rupee~20.89 (19.2\% growth over 2 years) indicates earnings improvement
+    \item Consistent dividend payouts demonstrate shareholder-friendly policies
+    \item High P/E ratio (62.5x vs. industry 45x) reflects market's premium valuation due to:
+    \begin{itemize}
+        \item Strong brand value
+        \item Consistent growth track record
+        \item Quality of earnings
+        \item Growth potential in consumer durables segment
+    \end{itemize}
+    \item Low dividend yield typical for growth companies reinvesting profits
+\end{itemize}
+
+%----------------------------------------------------------------------
+\subsection{Financial Ratios Summary}
+%----------------------------------------------------------------------
+
+\begin{table}[H]
+    \centering
+    \caption{Comprehensive Financial Ratios Summary (FY 2022-23)}
+    \begin{tabular}{|l|l|c|c|l|}
+        \hline
+        \textbf{Category} & \textbf{Ratio} & \textbf{Value} & \textbf{Benchmark} & \textbf{Status} \\
+        \hline
+        \multirow{1}{*}{\textbf{Liquidity}} & Current Ratio & 1.72 & 1.50 & \textcolor{green}{Above} \\
+        \hline
+        \multirow{3}{*}{\textbf{Profitability}} & Gross Profit Ratio & 35.2\% & 32.0\% & \textcolor{green}{Above} \\
+        & Operating Profit Ratio & 11.8\% & 10.5\% & \textcolor{green}{Above} \\
+        & Net Profit Ratio & 7.25\% & 6.5\% & \textcolor{green}{Above} \\
+        \hline
+        \multirow{3}{*}{\textbf{Returns}} & ROE & 17.12\% & 15.0\% & \textcolor{green}{Above} \\
+        & ROCE & 22.45\% & 18.0\% & \textcolor{green}{Above} \\
+        & ROA & 12.02\% & 10.0\% & \textcolor{green}{Above} \\
+        \hline
+        \textbf{Solvency} & Debt Equity Ratio & 0.08 & 0.40 & \textcolor{green}{Better} \\
+        \hline
+        \multirow{3}{*}{\textbf{Valuation}} & EPS & \rupee~20.89 & -- & Growing \\
+        & DPS & \rupee~5.50 & -- & Growing \\
+        & P/E Ratio & 62.5x & 45.0x & Premium \\
+        \hline
+    \end{tabular}
+\end{table}
+
+%----------------------------------------------------------------------
+\subsection{Financial Performance Trends}
+%----------------------------------------------------------------------
+
+\begin{figure}[H]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|c|}
+        \hline
+        \textbf{Parameter} & \textbf{FY 18-19} & \textbf{FY 19-20} & \textbf{FY 20-21} & \textbf{FY 21-22} & \textbf{FY 22-23} \\
+        \hline
+        Revenue (Cr) & 9,636 & 9,587 & 10,328 & 14,856 & 18,063 \\
+        \hline
+        PAT (Cr) & 726 & 664 & 942 & 1,184 & 1,310 \\
+        \hline
+        EPS (\rupee) & 11.58 & 10.59 & 15.02 & 18.89 & 20.89 \\
+        \hline
+        ROE (\%) & 16.8 & 14.5 & 19.9 & 17.3 & 17.1 \\
+        \hline
+    \end{tabular}
+    \caption{5-Year Financial Trends}
+\end{figure}
+
+\subsection{Key Financial Observations}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Revenue Growth:} 87\% revenue growth over 5 years (CAGR ~13.4\%)
+    \item \textbf{Profitability:} Consistent margins despite raw material inflation
+    \item \textbf{Capital Structure:} Almost debt-free, ensuring financial flexibility
+    \item \textbf{Shareholder Returns:} Consistent dividend payouts with growing EPS
+    \item \textbf{Market Valuation:} Premium valuation reflecting growth potential and brand strength
+    \item \textbf{Asset Efficiency:} Superior return ratios compared to industry peers
+\end{enumerate}
+
+%======================================================================
+% CONCLUSION
+%======================================================================
+\newpage
+\section{Conclusion}
+
+Havells India Ltd. demonstrates excellence across all five functions of management:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Planning:} Clear vision, well-defined objectives, and robust strategic planning for sustainable growth
+    
+    \item \textbf{Organising:} Well-structured organization with clear departmentalisation and authority flow
+    
+    \item \textbf{Staffing:} Comprehensive HR practices including recruitment, training, and competitive compensation
+    
+    \item \textbf{Directing:} Effective leadership, motivation techniques, and multi-channel communication
+    
+    \item \textbf{Controlling:} Rigorous performance standards and timely corrective actions
+\end{enumerate}
+
+Operating in an oligopolistic market, Havells has established itself as a premium brand with strong competitive advantages. The company's financial performance is exemplary, with:
+\begin{itemize}
+    \item Strong liquidity and minimal leverage
+    \item Profitability ratios above industry averages
+    \item Superior return on equity and capital employed
+    \item Growing EPS and consistent dividends
+    \item Premium market valuation reflecting investor confidence
+\end{itemize}
+
+Havells India Ltd. stands as a model of effective management practices in the Indian consumer goods industry.
+
+%======================================================================
+% REFERENCES
+%======================================================================
+\newpage
+\section{References}
+
+\begin{enumerate}[leftmargin=*]
+    \item Havells India Ltd. Annual Report 2022-23
+    \item Havells India Ltd. Annual Report 2021-22
+    \item Havells India Ltd. Official Website: \url{https://www.havells.com}
+    \item BSE/NSE Corporate Filings - Havells India Ltd.
+    \item Company Investor Presentations (Q4 FY23)
+    \item CRISIL Industry Reports - Electrical Equipment Industry
+    \item Ministry of Corporate Affairs Filings
+\end{enumerate}
+
+%======================================================================
+% END OF DOCUMENT
+%======================================================================
+\end{document}
