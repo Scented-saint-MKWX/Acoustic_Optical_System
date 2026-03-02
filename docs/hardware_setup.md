@@ -10,7 +10,7 @@
   - 16 LEDs, 16 slide switches, 5 push buttons
   - 4× Pmod connectors (12-pin each)
   - USB-JTAG for programming
-  - **Purchase**: ~$300 USD (academic pricing available)
+
 
 ### 2. PDM Microphone Array (Pmod JA)
 Connect 4 MEMS PDM microphones to **Pmod Header JA**:
