@@ -31,7 +31,7 @@ startup.o: startup.S
 	$(AS) $(ASFLAGS) -o $@ $<
 
 # C source
-main.o: main.c include/soc_regs.h include/uart.h include/beamform.h include/fft_ctrl.h include/laser_ctrl.h
+main.o: main.c include/soc_regs.h include/uart.h include/gpio.h include/spi.h include/beamform.h include/fft_ctrl.h include/laser_ctrl.h
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 # Link
