@@ -20,6 +20,7 @@
 #define BEAMFORMER_BASE  0x80003000
 #define FFT_BASE         0x80004000
 #define LASER_BASE       0x80005000
+#define AXI_MAP_BASE     0x80006000
 
 /* ---- GPIO Registers ---- */
 #define GPIO_DATA_OUT    REG32(GPIO_BASE + 0x00)
@@ -47,11 +48,22 @@
 #define FFT_REAL(k)      REG32(FFT_BASE + 0x100 + ((k) << 2))
 #define FFT_IMAG(k)      REG32(FFT_BASE + 0x300 + ((k) << 2))
 
-/* ---- Laser Vibrometer Registers ---- */
-#define LASER_CTRL       REG32(LASER_BASE + 0x00)
-#define LASER_STATUS     REG32(LASER_BASE + 0x04)
-#define LASER_I_SAMPLE   REG32(LASER_BASE + 0x08)
-#define LASER_Q_SAMPLE   REG32(LASER_BASE + 0x0C)
-#define LASER_VELOCITY   REG32(LASER_BASE + 0x10)
+/* ---- Laser Simulator Registers (replaces physical laser vibrometer) ---- */
+#define LASER_CTRL       REG32(LASER_BASE + 0x00)   /* bit0 = enable         */
+#define LASER_STATUS     REG32(LASER_BASE + 0x04)   /* bit0 = running        */
+#define LASER_SIM_FREQ   REG32(LASER_BASE + 0x08)   /* R/W: frequency in Hz  */
+#define LASER_WAVE_OUT   REG32(LASER_BASE + 0x0C)   /* RO:  current sine sample */
+/* Alias kept for firmware backward compatibility */
+#define LASER_I_SAMPLE   LASER_SIM_FREQ
+#define LASER_Q_SAMPLE   LASER_WAVE_OUT
+#define LASER_VELOCITY   LASER_WAVE_OUT
+
+/* ---- AXI DSP Output Registers (0x8000_6000) ---- */
+/* These registers are written by hardware (AoA estimator and laser simulator) */
+/* and are read-only from the RISC-V perspective.                               */
+#define AXI_BASE         0x80006000
+#define AXI_AOA_ANGLE    REG32(AXI_BASE + 0x00)   /* Signed: degrees × 10  */
+#define AXI_SIM_FREQ     REG32(AXI_BASE + 0x04)   /* Unsigned: Hz          */
+#define AXI_DSP_STATUS   REG32(AXI_BASE + 0x08)   /* bit0=angle_valid, bit1=freq_valid */
 
 #endif /* SOC_REGS_H */

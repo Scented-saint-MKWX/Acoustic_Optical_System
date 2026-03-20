@@ -75,20 +75,29 @@ module wishbone_interconnect (
     output wire        s5_stb_o,
     input  wire        s5_ack_i,
 
-    // ------ Slave 6: Laser Vibrometer (0x8000_5000) ------
+    // ------ Slave 6: Laser Simulator (0x8000_5000) ------
     output wire [31:0] s6_adr_o,
     output wire [31:0] s6_dat_o,
     input  wire [31:0] s6_dat_i,
     output wire        s6_we_o,
     output wire        s6_cyc_o,
     output wire        s6_stb_o,
-    input  wire        s6_ack_i
+    input  wire        s6_ack_i,
+
+    // ------ Slave 7: AXI Memory Map (0x8000_6000) ------
+    output wire [31:0] s7_adr_o,
+    output wire [31:0] s7_dat_o,
+    input  wire [31:0] s7_dat_i,
+    output wire        s7_we_o,
+    output wire        s7_cyc_o,
+    output wire        s7_stb_o,
+    input  wire        s7_ack_i
 );
 
     // =========================================================================
     // Address Decode
     // =========================================================================
-    localparam NUM_SLAVES = 7;
+    localparam NUM_SLAVES = 8;
 
     wire [NUM_SLAVES-1:0] slave_sel;
 
@@ -99,7 +108,8 @@ module wishbone_interconnect (
     //   0x8000_2xxx                : Slave 3 (UART RX)
     //   0x8000_3xxx                : Slave 4 (Beamformer)
     //   0x8000_4xxx                : Slave 5 (FFT)
-    //   0x8000_5xxx                : Slave 6 (Laser)
+    //   0x8000_5xxx                : Slave 6 (Laser Simulator)
+    //   0x8000_6xxx                : Slave 7 (AXI Memory Map)
 
     assign slave_sel[0] = (m_adr_i[31] == 1'b0);
     assign slave_sel[1] = (m_adr_i[31] == 1'b1) && (m_adr_i[15:12] == 4'h0);
@@ -108,6 +118,7 @@ module wishbone_interconnect (
     assign slave_sel[4] = (m_adr_i[31] == 1'b1) && (m_adr_i[15:12] == 4'h3);
     assign slave_sel[5] = (m_adr_i[31] == 1'b1) && (m_adr_i[15:12] == 4'h4);
     assign slave_sel[6] = (m_adr_i[31] == 1'b1) && (m_adr_i[15:12] == 4'h5);
+    assign slave_sel[7] = (m_adr_i[31] == 1'b1) && (m_adr_i[15:12] == 4'h6);
 
     // =========================================================================
     // Pass-through signals (address, data, control)
@@ -120,10 +131,11 @@ module wishbone_interconnect (
     assign s4_adr_o = m_adr_i;  assign s4_dat_o = m_dat_i;
     assign s5_adr_o = m_adr_i;  assign s5_dat_o = m_dat_i;
     assign s6_adr_o = m_adr_i;  assign s6_dat_o = m_dat_i;
+    assign s7_adr_o = m_adr_i;  assign s7_dat_o = m_dat_i;
 
     assign s0_we_o = m_we_i;  assign s1_we_o = m_we_i;  assign s2_we_o = m_we_i;
     assign s3_we_o = m_we_i;  assign s4_we_o = m_we_i;  assign s5_we_o = m_we_i;
-    assign s6_we_o = m_we_i;
+    assign s6_we_o = m_we_i;  assign s7_we_o = m_we_i;
 
     // Cycle/strobe gated by address decode
     assign s0_cyc_o = m_cyc_i & slave_sel[0];  assign s0_stb_o = m_stb_i & slave_sel[0];
@@ -133,6 +145,7 @@ module wishbone_interconnect (
     assign s4_cyc_o = m_cyc_i & slave_sel[4];  assign s4_stb_o = m_stb_i & slave_sel[4];
     assign s5_cyc_o = m_cyc_i & slave_sel[5];  assign s5_stb_o = m_stb_i & slave_sel[5];
     assign s6_cyc_o = m_cyc_i & slave_sel[6];  assign s6_stb_o = m_stb_i & slave_sel[6];
+    assign s7_cyc_o = m_cyc_i & slave_sel[7];  assign s7_stb_o = m_stb_i & slave_sel[7];
 
     // =========================================================================
     // Return mux (data + ack back to master)
@@ -148,6 +161,7 @@ module wishbone_interconnect (
             slave_sel[4]: begin m_dat_o = s4_dat_i; m_ack_o = s4_ack_i; end
             slave_sel[5]: begin m_dat_o = s5_dat_i; m_ack_o = s5_ack_i; end
             slave_sel[6]: begin m_dat_o = s6_dat_i; m_ack_o = s6_ack_i; end
+            slave_sel[7]: begin m_dat_o = s7_dat_i; m_ack_o = s7_ack_i; end
             default:      begin m_dat_o = 32'd0;    m_ack_o = 1'b0;     end
         endcase
     end
